@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/wp-todolist'
     ENV.locationType = 'hash'
-    ENV.apiHost = '<deployed api url>'
+    ENV.apiHost = 'https://xiao-todolistapi.herokuapp.com/'
   }
 
   return ENV
