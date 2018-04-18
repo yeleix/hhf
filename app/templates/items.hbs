@@ -1,1 +1,10 @@
+<h2>Items</h2>
+<ul>
+  {{#each model as |item|}}
+  <li>{{#link-to 'item' item}}{{item.text}}{{/link-to}}</li>
+  {{/each}}
+{{new-item create='createItem'}}
+{{!-- {{examples/update-example save='saveExample'}} --}}
+</ul>
+
 {{outlet}}
