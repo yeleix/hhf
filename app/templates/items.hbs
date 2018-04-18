@@ -1,9 +1,13 @@
 <h2>Items</h2>
+
+{{create-item create='createItem'}}
+
 <ul>
 
 {{#each model as |item|}}
 <li>{{item.content}} {{item.date}}</li>
 {{/each}}
+
 </ul>
 
 {{outlet}}
