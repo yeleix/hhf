@@ -9,6 +9,7 @@ export default Component.extend({
     createItem () {
       this.sendAction('create', this.get('newItem'))
       this.set('newItem.content', '') // get rid of text field
+      this.set('newItem.date', '')
     }
   }
 })

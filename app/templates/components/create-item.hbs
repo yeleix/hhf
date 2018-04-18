@@ -1,4 +1,5 @@
 <form {{action 'createItem' on='submit'}}>
   {{input placeholder='New Item' value=newItem.content}}
-  <button type='submit'>Create</button>
+  {{input type="date" placeholder='New Due Date' value=newItem.date}}
+<button type='submit'>Create</button>
 </form>
