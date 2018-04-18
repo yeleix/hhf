@@ -1,14 +1,21 @@
+<div>
 <h2>Items</h2>
 
 {{create-item create='createItem'}}
 
-
 <ul class="todo-list">
-{{#each model as |item|}}
 
-<ul><input type="checkbox">   {{item.content}} {{item.date}}  </ul>
-{{/each}}
+  {{#each model as |item|}}
+  <ul>
+    <input type="checkbox" id="checkbox">
+      {{item.content}} {{item.date}} {{delete-item item=item
+                                                   delete='deleteItem'}}
+  </ul>
+
+  {{/each}}
+
+
 
 </ul>
-
+</div>
 {{outlet}}

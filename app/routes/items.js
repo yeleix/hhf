@@ -9,6 +9,11 @@ export default Route.extend({
       // console.log('hi')
       this.get('store').createRecord('item', newItem)
       .save()
+    },
+    deleteItem (item) {
+      // console.log(item)
+      item.destroyRecord()
+        // .then(() => this.transitionTo('items'))
     }
   }
 })
