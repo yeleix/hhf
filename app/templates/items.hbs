@@ -2,10 +2,11 @@
 
 {{create-item create='createItem'}}
 
-<ul>
 
+<ul class="todo-list">
 {{#each model as |item|}}
-<li>{{item.content}} {{item.date}}</li>
+
+<ul><input type="checkbox">   {{item.content}} {{item.date}}  </ul>
 {{/each}}
 
 </ul>
