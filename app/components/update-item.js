@@ -5,6 +5,7 @@ export default Component.extend({
   //   content: '',
   //   date: ''
   // },
+
   actions: {
     updateItem () {
       console.log(this.get('item'))

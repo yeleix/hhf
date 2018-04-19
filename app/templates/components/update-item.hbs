@@ -1,24 +1,17 @@
+
+    <button id="btn" {{action 'togglemodal'}}>Open Modal</button>
+
+    {{!-- <div class="modal fade"  data-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center">{{title}}</h2>
+          </div>
+            {{yield}}
+        	<div class="modal-footer">
+    		</div>
+        </div>
+      </div>
+    </div> --}}
+
 <div class="glyphicon glyphicon-pencil" {{action 'update'}}></div>
-
-{{!-- <form {{action 'updateExample' example on='submit'}} >
-{{!-- {{input placeholder='Update Example' value=example.text}} --}}
-
-{{!-- <button class='btn-xs' {{action 'update'}}>EDIT</button> --}}
-
-
-{{!-- <div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <button class="close" type="button" {{action cancel on="click"}}>x</button>
-      <h4 class="modal-title">Confirm</h4>
-    </div>
-    <div class="modal-body">
-      Are you sure about this?!?!
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-default" {{action cancel on="click"}}>Nope</a>
-      <button class="btn btn-danger" {{action confirm on="click"}}>Yes, do it!</a>
-    </div>
-  </div>
-</div> --}}
-{{!-- </form> --}}
