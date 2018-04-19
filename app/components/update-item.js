@@ -1,15 +1,10 @@
 import Component from '@ember/component'
 
 export default Component.extend({
-  // newItem: {
-  //   content: '',
-  //   date: ''
-  // },
-
+  // BEING ABLE TO EDIT FORMS // SAVE + CLOSE
   actions: {
     updateItem () {
-      console.log(this.get('item'))
-      this.sendAction('update', this.get('item')) // example = data because {{#each model as |example|}} (??)
+      this.sendAction('update', this.get('item'))
     }
   }
 })
