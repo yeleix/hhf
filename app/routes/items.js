@@ -16,6 +16,7 @@ export default Route.extend({
         // .then(() => this.transitionTo('items'))
     },
     saveItem (item) {
+      console.log('item is ', item)
       item.save()
     }
   }
