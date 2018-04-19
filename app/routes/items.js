@@ -14,6 +14,9 @@ export default Route.extend({
       // console.log(item)
       item.destroyRecord()
         // .then(() => this.transitionTo('items'))
+    },
+    saveItem (item) {
+      item.save()
     }
   }
 })

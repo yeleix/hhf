@@ -7,9 +7,16 @@
 
   {{#each model as |item|}}
   <ul>
+
     <input type="checkbox" id="checkbox">
-      {{item.content}} {{item.date}} {{delete-item item=item
-                                                   delete='deleteItem'}}
+      <span>{{item.content}}</span> <span> <b>DUE:</b> {{item.date}}</span>
+      {{!-- <span class="glyphicon glyphicon-trash" {{action 'delete'}}></span> --}}
+
+      {{delete-item item=item
+                    delete='deleteItem'}}
+      {{update-item item=item
+                    update='saveItem'}}
+
   </ul>
 
   {{/each}}
