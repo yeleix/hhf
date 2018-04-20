@@ -5,17 +5,17 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "users"}}Users{{/link-to}}</li>
-        <li>{{#link-to "items"}}Items{{/link-to}}</li>
+        {{!-- <li>{{#link-to "users"}}Users{{/link-to}}</li> --}}
+        <li>{{#link-to "items"}}TO-DO LIST ♥{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
-        <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
-        <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
+        <li>{{#link-to "change-password"}}CHANGE PASSWORD{{/link-to}}</li>
+        <li><a href="#" {{action "signOut"}}>SIGN OUT</a></li>
         {{else}}
-        <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>
-        <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li>
+        <li>{{#link-to "sign-up"}}SIGN UP{{/link-to}}</li>
+        <li>{{#link-to "sign-in"}}SIGN IN{{/link-to}}</li>
         {{/if}}
       </ul>
     </div>
@@ -23,7 +23,7 @@
 </nav>
 
 <header class="main-header">
-<h1>SIMPL<span>WED</span><font size="2px">♥</font></h1>
+<h1>SIMPL<font color="#F5C2D4">/</font><span>WED</span><font size="2px" color="#FC87B0">♥</font></h1>
 {{!-- <font size="11px">∞</font> --}}
   <h2>A simple wedding to-do list developed in EmberJS</h2>
 </header>
