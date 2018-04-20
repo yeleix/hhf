@@ -1,5 +1,4 @@
 <div>
-<h3>Items</h3>
 
 {{create-item create='createItem'}}
 
@@ -9,7 +8,7 @@
   <ul>
 
     <input type="checkbox" id="checkbox">
-      <span>{{item.content}}</span> <span> <b>DUE:</b> {{item.date}}</span>
+      <span class="content-label">{{item.content}}</span> <span class="date-label"> <b>DUE:</b> {{item.date}}</span>
       {{!-- <span class="glyphicon glyphicon-trash" {{action 'delete'}}></span> --}}
 
       {{delete-item item=item

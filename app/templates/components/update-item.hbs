@@ -1,4 +1,4 @@
-
+{{!--
 
 <div>
       {{input class="input__field input__field--yxiao" value=item.content}}
@@ -10,10 +10,10 @@
       <span class="input__label-content input__label-content--yxiao">DUE DATE</span>
     </label>
   </div>
-<button {{action 'updateItem'}}>submit</button>
+<button {{action 'updateItem'}}>submit</button> --}}
 
-<div>
-      {{input value=item.content placeholder="task"}}
-    {{input value=item.date placeholder="date"}}
+<div class="update">
+      {{input value=item.content type="text" placeholder="task" required="required"}}
+    {{input value=item.date placeholder="date" required="required"}}
+    <button class="btn-xs" {{action 'updateItem'}}>edit</button>
   </div>
-<button {{action 'updateItem'}}>submit</button>
